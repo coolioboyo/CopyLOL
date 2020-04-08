@@ -1,0 +1,14 @@
+<input type="text" value="" id="cumInput">
+<button onclick="cumCopy()">Copy</button>
+
+<title>CopyLOL</title>
+<meta property="og:title" content="CopyLOL">
+
+<script>
+function cumCopy() {
+  var copyText = document.getElementById("cumInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
